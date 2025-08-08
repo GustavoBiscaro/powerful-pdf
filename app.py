@@ -4,6 +4,7 @@ from menu_extrair import exibir_menu_extrair
 from menu_combinar import exibir_menu_combinar
 from menu_marca_dagua import exibir_menu_marca_dagua
 from menu_imagens import exibir_menu_imagens
+from menu_relatorio import exibir_menu_relatorio
 
 st.set_page_config(
     page_title="Powerful PDF",
@@ -53,12 +54,7 @@ with col2:
 
     case 'Imagem para PDF':
       exibir_menu_imagens(coluna=col2)
-      
-    case _:
-      st.warning('Implementar página')
-
-
-
-    # case 'Excel para PDF':
-    #   st.write("Você escolheu Excel para PDF.")
+  
+    case 'Excel para PDF':
+      exibir_menu_relatorio(coluna=col2)
     
